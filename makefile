@@ -4,7 +4,7 @@ all: main.o llist.o
 main.o: main.c llist.c llist.h
 	gcc -c main.c
 
-llist.o: llist.c
+llist.o: llist.c llist.h
 	gcc -c llist.c
 
 run:
