@@ -16,6 +16,13 @@ int main() {
     printf("Populated list:\n");
     print_list(first);
     
+    first = remove_node(first, 5);
+    first = remove_node(first, 0);
+    first = remove_node(first, 1);
+
+    printf("Partially depopulated list:\n");
+    print_list(first);
+
     first = free_list(first);
     printf("Freed list:\n");
     print_list(first);
