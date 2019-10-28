@@ -4,10 +4,9 @@
 
 void print_list(struct node* h) {
     printf("[ ");
-    struct node* next = h;
-    while (next != NULL) {
-        printf("%d ", next->i);
-        next = next->next;
+    while (h != NULL) {
+        printf("%d ", h->i);
+        h = h->next;
     }
     printf("]\n");
 }

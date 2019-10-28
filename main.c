@@ -19,6 +19,7 @@ int main() {
     first = remove_node(first, 5);
     first = remove_node(first, 0);
     first = remove_node(first, 1);
+    first = remove_node(first, 100);
 
     printf("Partially depopulated list:\n");
     print_list(first);
