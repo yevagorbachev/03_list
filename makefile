@@ -1,5 +1,5 @@
 all: main.o llist.o
-	gcc -o program main.c llist.c
+	gcc -o program main.o llist.o
 
 main.o: main.c llist.c llist.h
 	gcc -c main.c
